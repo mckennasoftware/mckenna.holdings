@@ -57,7 +57,7 @@
     z-index: 10;
   }
   .bar { display: flex; align-items: center; justify-content: space-between; height: 4.25rem; gap: 1rem; }
-  .brand { display: flex; align-items: center; gap: .65rem; font-weight: 650; letter-spacing: -.01em; color: var(--ink); font-size: 1.02rem; }
+  .brand { display: flex; align-items: center; gap: .65rem; font-weight: 650; letter-spacing: -.01em; color: var(--ink); font-size: 1.02rem; white-space: nowrap; }
   .brand:hover { text-decoration: none; }
   .brand svg { display: block; flex: none; }
   nav { display: flex; gap: 1.5rem; font-size: .94rem; }
@@ -65,8 +65,8 @@
   nav a:hover { color: var(--ink); text-decoration: none; }
   @media (max-width: 34rem) { nav a[data-optional] { display: none; } }
 
-  /* Hero */
-  .hero { padding: 6rem 0 4.5rem; }
+  /* Hero — longhands only, so .wrap's horizontal padding survives the cascade. */
+  .hero { padding-top: 6rem; padding-bottom: 4.5rem; }
   .eyebrow {
     display: inline-block;
     font-size: .78rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
