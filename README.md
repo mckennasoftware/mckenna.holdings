@@ -8,7 +8,7 @@ icons are inline SVG; type is the system font stack.
 
 - `index.html` — the whole page
 - `assets/favicon.svg` — favicon
-- `CNAME` — custom domain for GitHub Pages (added once DNS is pointed)
+- `CNAME` — custom domain for GitHub Pages (`mckenna.holdings`)
 - `.nojekyll` — serve files as-is, no Jekyll processing
 
 ## Local preview
@@ -27,3 +27,9 @@ GitHub Pages serves the `main` branch from the repository root. Pushing to `main
 
 The domain is registered at Squarespace. Apex `mckenna.holdings` points at the four
 GitHub Pages A records; `www` is a CNAME to `mckennasoftware.github.io`.
+
+Squarespace's "Squarespace Defaults" preset had to be deleted outright rather than
+edited — alongside the A records it carries a type-65 HTTPS/SVCB record whose
+`ipv4hint` points at Squarespace, and browsers honor that even when the A records are
+correct. Google Workspace runs on this domain; its MX, SPF, and verification TXT records
+live in Custom Records and are unaffected.
