@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>McKenna Holdings LLC — Software, built small and built well</title>
+<title>McKenna Holdings LLC | Software, built well</title>
 <meta name="description" content="McKenna Holdings LLC is a Colorado holding company building focused software products. FishFly, an AI fly-fishing assistant for iPhone, is its first.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
@@ -65,7 +65,7 @@
   nav a:hover { color: var(--ink); text-decoration: none; }
   @media (max-width: 34rem) { nav a[data-optional] { display: none; } }
 
-  /* Hero — longhands only, so .wrap's horizontal padding survives the cascade. */
+  /* Hero: longhands only, so .wrap's horizontal padding survives the cascade. */
   .hero { padding-top: 6rem; padding-bottom: 4.5rem; }
   .eyebrow {
     display: inline-block;
@@ -116,6 +116,7 @@
     background: linear-gradient(145deg, #2c7a9e, #17415c);
     display: flex; align-items: center; justify-content: center; color: #fff;
   }
+  .venture-mark--fishfly { background: linear-gradient(160deg, #255B47, #173C2E); }
   .venture h3 { margin: 0 0 .1rem; font-size: 1.3rem; letter-spacing: -.02em; font-weight: 650; }
   .tag {
     display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .07em;
@@ -166,11 +167,10 @@
 
   <div class="wrap hero">
     <span class="eyebrow">Castle Rock, Colorado</span>
-    <h1>Software, built small and built well.</h1>
+    <h1>Software, built well.</h1>
     <p class="lede">
-      McKenna Holdings LLC is an independent holding company. We build focused software
-      products — the kind that solve one real problem completely, for people who care
-      about the details.
+      McKenna Holdings LLC is an independent holding company. We build and run our own
+      software products.
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="#ventures">See what we're building</a>
@@ -218,20 +218,16 @@
       <p class="section-lede">What the company owns and operates today.</p>
 
       <div class="venture">
-        <div class="venture-mark" aria-hidden="true">
-          <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 27c5-8 13-12 21-12 4 0 7 1 9 3-2 6-8 13-17 15-6 1.3-10 .3-13-1z"/>
-            <path d="M38 18l4-5M8 27l-3 6"/>
-            <circle cx="31.5" cy="21.5" r="1.6" fill="currentColor" stroke="none"/>
-          </svg>
+        <div class="venture-mark venture-mark--fishfly" aria-hidden="true">
+          <svg width="44" height="44" viewBox="195 90 600 675" fill="none" aria-hidden="true"><path d="M461 104 Q349 115.5 245 305" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" opacity="0.55"/><circle cx="232" cy="324" r="26" fill="#BE5D20"/><path fill-rule="evenodd" d="M494 335 C509 334 532 336 544 338 C557 340 563 344 569 346 C575 349 577 350 580 353 C582 356 587 357 584 367 C581 376 566 400 562 409 C558 418 559 420 560 424 C561 428 560 427 567 432 C574 436 589 442 602 450 C614 458 633 474 641 478 C649 483 643 483 651 478 C659 473 676 455 689 447 C701 439 712 434 724 430 C737 427 755 424 764 424 C772 424 772 427 775 428 C777 430 778 430 779 435 C780 440 782 448 781 457 C781 466 778 478 775 487 C772 497 768 506 763 515 C758 524 748 535 745 541 C742 546 741 540 744 548 C748 555 760 573 766 584 C771 595 774 602 777 612 C779 622 782 635 782 643 C782 652 778 659 776 664 C774 668 773 667 770 668 C767 669 766 671 757 670 C748 668 730 665 718 661 C706 657 697 652 687 645 C676 638 662 624 656 619 C649 614 649 615 646 615 C642 614 642 614 636 618 C630 622 620 632 611 638 C602 644 593 649 580 656 C567 662 542 670 533 675 C524 681 528 679 528 688 C527 697 532 720 532 728 C532 737 532 737 530 741 C528 744 523 749 518 750 C513 752 508 751 501 750 C493 748 481 745 471 741 C462 737 454 734 444 728 C434 721 423 714 411 704 C399 694 386 676 372 667 C358 657 341 654 328 647 C316 641 305 635 294 627 C284 619 272 609 264 600 C256 591 251 582 247 574 C244 566 243 560 242 552 C241 545 242 538 244 530 C246 522 250 514 254 506 C259 499 262 494 271 485 C281 477 295 465 311 456 C326 446 351 440 365 429 C379 417 384 397 394 386 C403 375 410 368 420 361 C431 354 443 348 455 343 C468 339 480 336 494 335 Z M367 538 A21 21 0 1 0 324 538 A21 21 0 1 0 367 538 Z" fill="currentColor"/></svg>
         </div>
         <div>
           <h3>FishFly <span class="tag">In beta</span></h3>
           <p>
-            An AI fly-fishing assistant for iPhone. FishFly reads the conditions on the
-            water you're headed to — flows, weather, season, what's hatching — and tells
-            you which flies to tie on and why. Built on real hatch data and regional
-            pattern research rather than generic advice.
+            An AI fly-fishing assistant for iPhone. FishFly checks conditions on the
+            water you're headed to, like flows, weather, season, and what's hatching,
+            then tells you which flies to tie on and why. Built on real hatch data and
+            regional pattern research rather than generic advice.
           </p>
           <a href="https://fishfly.app">fishfly.app &rarr;</a>
         </div>
@@ -283,10 +279,10 @@
     <div class="wrap">
       <h2>Contact</h2>
       <p class="section-lede">
-        Questions about the company, a product, or something you'd like to build together —
-        email is the fastest way to reach us.
+        Questions about the company, a product, or something you'd like to build together?
+        Email is the fastest way to reach us.
       </p>
-      <p class="contact-mail"><a href="mailto:connor@mckenna.holdings">connor@mckenna.holdings</a></p>
+      <p class="contact-mail"><a id="mail" href="#contact">connor [at] mckenna [dot] holdings</a></p>
     </div>
   </section>
 
@@ -299,7 +295,16 @@
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+/* Email is assembled here so the address never appears in the page source. */
+(function () {
+  var u = 'connor', d = ['mckenna', 'holdings'].join('.');
+  var a = document.getElementById('mail');
+  a.href = 'mailto:' + u + '@' + d;
+  a.textContent = u + '@' + d;
+})();
+</script>
 
 </body>
 </html>
